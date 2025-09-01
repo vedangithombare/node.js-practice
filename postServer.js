@@ -22,27 +22,6 @@ const server = createServer((req, res) => {
   }
 });
 
-/*  if (req.url === "/" && req.method === "GET") {
-    res.writeHead(200);
-    res.end("welcome to home page!!");
-  } else if (req.url === "/about") {
-    res.writeHead(200);
-    res.end("welcome to the about page!!!");
-  } else {
-    res.writeHead(404);
-    res.end("page not found");
-  }*/
-
-// const server = createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader("Content-Type", "text/plain");
-//   const file = fs.createWriteStream("write.txt");
-//   file.write("new file, yayy   ");
-//   file.write("hey");
-//   file.write("new line")
-//   res.end("hello world");
-// });
-
 server.listen(port, () => {
   console.log(`server running on port number: ${port}`);
 });
